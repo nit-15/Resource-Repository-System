@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: aliceblue;
+}
+#search{
+    padding: 8px 34px;
+    position: fixed;
+    top: 3%;
+    right: 1%;
+    border: 2px solid green;
+    border-radius: 45px;
+    font-size: 25px;
+    text-align: center;
+    z-index: 1;
+}
+/* NAVBAR STYLING */
+#navbar{
+    display: flex;
+    padding: 13px 0px 0px 0px;
+    position: fixed;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    z-index: 1;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+#navbar ul li a{
+    display: block;
+    margin: 8px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 15px;
+    text-decoration: none;
+    color: rgb(26, 38, 11);
+}
+#navbar ul li a:hover{
+    /* font-size: 25px; */
+    font-weight: bold;
+    color: black;
+    background-color: aliceblue;
+}
+#logo{
+    margin: -18px 9px;
+}
+#logo img{
+    height: 76px;
+    margin: 20px -3px;
+    border-radius: 45px;
+}
+.mainhead{
+    font-size: 43px;
+    color: aliceblue;
+}
+/* HOME */
+#home {
+    background: url(bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    padding: 130px 0px 43px 0px;
+}
+#home h1, #home h2{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#home h3{
+    color: black;
+}
+.repository-intro{
+    padding: 0px 20px;
+}
+#home .repository-intro h2{
+    font-size: 28px;
+}
+#home .repository-intro p{
+    font-size: 23px;
+}
+.repository-intro ul li{
+    font-size: 23px;
+    color: aliceblue;
+}
+.repository-intro ul{
+    list-style-type: circle;
+    padding-left: 30px;
+}
+#subjects{
+    display: flex;
+}
+.subitems{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.hidden-text {
+    position: absolute;
+    top: 111%;
+    left: -10%;
+    right: -10%;
+    padding: 20px;
+    background-color: rgb(245, 245, 255);
+    color: white;
+    border: 5px double rgb(13, 14, 13);
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+    text-align: justify;
+    pointer-events: none;
+    z-index: 1;
+}
+.subitems:hover .hidden-text {
+    opacity: 1;
+  }
+/* #subjects:hover {
+    padding-bottom: 550px;
+  } */
+.subitems a{
+    font-size: 22px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.sublogo{
+    border-radius: 45px;
+    height: 70px;
+    width: 80px;
+}
+
+/* ABOUT US */
+#about{
+    padding-bottom: 25px;
+    background: url('sect2.jpg') no-repeat center center/cover;
+    width: 100%;
+    color: aliceblue;
+}
+#about h1{
+    display: block;
+    color: aliceblue;
+    font-size: 35px;
+    margin: 1px;
+    padding: 40px;
+}
+#about p{
+    font-size: 23px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#about .description ul li{
+    font-size: 25px;
+    margin: 20px;
+    padding: 5px;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+#about .description ul li a{
+    color: aqua;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* CONTACT US */
+#contact{
+    background: url('sect3.jpg') no-repeat center center/cover;
+    width: 100%;
+    color: aliceblue;
+    padding: 10px 0px 30px 0px;
+}
+#contact h1{
+    color: black;
+    padding: 32px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.contactinfo{
+    padding: 20px;
+}
+.contactinfo p{
+    font-size: 25px;
+    color: black;
+}
+.contactinfo ul{
+    list-style-type: square;
+    font-size: 25px;
+    color: black;
+    padding-left: 50px;
+}
