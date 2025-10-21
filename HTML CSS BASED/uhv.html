@@ -6,49 +6,63 @@
     <title>UHV</title>
     <style>
         .head{
-            
+            color:rgb(209, 210, 210);
+            text-align:center;
+            font-size: 25px;
         }
         .syllabus{
-            color:chocolate;
-            
-        }
-        .btn{
-            margin: 20px;
-            padding: 20px;
-            border: 30px;
-            border-radius: 25px;
-            font-size: 20px;
-            background-color: aliceblue;
-            color: black;
-        }
-        .btn:hover{
-            background-color: black;
-            color: aliceblue;
-        }
-        .fileinput p{
-            font-size: 25px;
-        }
-        #file-upload{
-            font-size: 25px;
-            padding: 20px;
-        }
-        *{
-            padding: 0px;
-            margin: 0px;
+            color:rgb(230, 230, 230);
+            font-size:25px; 
         }
         body{
-            background: url(bg.jpg) no-repeat center center/cover;
+            background:url(bg.jpg) no-repeat center center/cover;
+        }
+        table, th, td, tr{
+            border: 1px solid white;
+            font-size: 20px;
+        }
+        td{
+            color:rgb(249, 243, 243);
+            padding: 18px;
+        }
+        tr{
+            color:rgb(199, 224, 247);
+            padding: 5px;
+        }
+        .sublogo{
+            border-radius: 45px;
+            height: 28px;
+            width: 40px;
+            margin-right: 50px;
+        }
+        .fileinput, .fileinput input, .fileinput p{
+            font-size: 20px;
             color: aliceblue;
         }
-    </style>
+        .btn{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .file, #file-list p{
+            background-color: beige;
+            color: black;
+        }
+        .file{
+            padding: 11px 40px;
+            margin: 10px 0px;
+            border-radius: 30px;
+        }
+        </style>
 </head>
 <body>
-    <div class="head"><h2>Universal Human Values</h2></div>
+    <div class="head"><h2><img src="uhv.png" class="sublogo" alt="UHV">Universal Human Values</h2></div>
     
     <div class="syllabus"><h3>Syllabus</h3></div>
-    <div><p>
-        <div><strong>Course Introduction - Need, Basic Guidelines, Content and 
-            Process for Value Education</strong>
+    <div><table>
+        <tr><th><strong>Course Introduction - Need, Basic Guidelines, Content and 
+            Process for Value Education</strong> </th><td>
             Understanding the need, basic guidelines, content and process for Value Education, 
             Self-Exploration–what is it? - its content and process; ‘Natural Acceptance’ and 
             Experiential Validation- as the mechanism for self exploration, Continuous 
@@ -57,9 +71,9 @@
             fulfillment of aspirations of every human being with their correct priority, 
             Understanding Happiness and Prosperity correctly- A critical appraisal of the 
             current scenario, Method to fulfill the above human aspirations: understanding and 
-            living in harmony at various levels. </div> 
-        <div><strong>Understanding Harmony in the Human Being - Harmony in 
-            Myself</strong> 
+            living in harmony at various levels. </td></tr>
+        <tr><th><strong>Understanding Harmony in the Human Being - Harmony in 
+            Myself</strong> </th><td> 
             Understanding human being as a co-existence of the sentient ‘I’ and the material 
             ‘Body’, Understanding the needs of Self (‘I’) and ‘Body’ - Sukh and Suvidha, 
             Understanding the Body as an instrument of ‘I’ (I being the doer, seer and enjoyer), 
@@ -67,9 +81,9 @@
             Understanding the harmony of I with the Body: Sanyam and Swasthya; correct 
             appraisal of Physical needs, meaning of Prosperity in detail, Programs to 
             ensure Sanyam and Swasthya. 
-            </div> 
-        <div><strong>Understanding Harmony in the Family and Society- Harmony in 
-            Human-Human Relationship </strong>
+            </td></tr> 
+        <tr><th><strong>Understanding Harmony in the Family and Society- Harmony in 
+            Human-Human Relationship </strong> </th><td>
             Understanding harmony in the Family- the basic unit of human interaction , 
             Understanding values in human-human relationship; meaning of Nyaya and 
             program for its fulfillment to ensure Ubhay-tripti; Trust (Vishwas) and Respect 
@@ -78,18 +92,18 @@
             meaning of Samman, Difference between respect and differentiation; the other 
             salient values in relationship, Understanding the harmony in the society (society 
             being an extension of family): Samadhan, Samridhi, Abhay, Sah-astitva as 
-            comprehensive Human Goals, Visualizing a universal harmonious order in society Undivided Society (AkhandSamaj), Universal Order (SarvabhaumVyawastha )- 
-            from family to world family!.</div>
-        <div><strong>Understanding Harmony in the Nature and Existence - Whole 
-            existence as Co-existence</strong>
+            comprehensive Human Goals, Visualizing a universal harmonious order in societyUndivided Society (AkhandSamaj), Universal Order (SarvabhaumVyawastha )- 
+            from family to world family!.</td></tr>
+        <tr><th><strong>Understanding Harmony in the Nature and Existence - Whole 
+            existence as Co-existence</strong> </th><td>
             Understanding the harmony in the Nature, Interconnectedness and mutual 
             fulfillment among the four orders of nature- recyclability and self-regulation in 
             nature, Understanding Existence as Co-existence (Sah-astitva) of mutually 
             interacting units in all-pervasive space, Holistic perception of harmony at all levels 
-            of existence.</div>
-        <div><strong>Implications of the above Holistic Understanding of Harmony on 
+            of existence.</td></tr>
+        <tr><th><strong>Implications of the above Holistic Understanding of Harmony on 
             Professional Ethics 
-            </strong>
+            </strong> </th><td>
             Natural acceptance of human values, Definitiveness of Ethical Human Conduct, 
             Basis for Humanistic Education, Humanistic Constitution and Humanistic 
             Universal Order, Competence in Professional Ethics: a) Ability to utilize the 
@@ -100,17 +114,16 @@
             transition from the present state to Universal Human Order: a) At the level of 
             individual: as socially and ecologically responsible engineers, technologists and 
             managers, b) At the level of society: as mutually enriching institutions and 
-            organizations. </div>
-    </p></div>
-    
-    <div class="fileinput">
-        <br><br>
-        <h2>Upload file from here : </h2>
-        <input type="file" id="file-upload">
-        <button class="btn" onclick="uploadFile()">UPLOAD</button><br>
-        <p>Download a document:</p><br>
-        <div id="file-list"></div>
-        <script src="script.js"></script>
-    </div>
+            organizations. </td></tr>
+        </table></div>
+    <br><br>
+        <div class="fileinput">
+            <h3>Upload Files from below : </h3>
+            <input type="file" id="file-upload">
+            <button class="btn" onclick="uploadFile()">UPLOAD</button><br><br>
+            <h3>Download a document:</h3>
+            <div id="file-list"></div>
+            <script src="script.js"></script>
+        </div>
 </body>
 </html>

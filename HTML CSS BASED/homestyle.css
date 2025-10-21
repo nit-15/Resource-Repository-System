@@ -94,7 +94,7 @@ p{
     color: aliceblue;
 }
 .repository-intro ul{
-    list-style-type: circle;
+    list-style-type: square;
     padding-left: 30px;
 }
 #subjects{

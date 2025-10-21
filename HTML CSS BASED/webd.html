@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+        .head{
+            color:rgb(209, 210, 210);
+            text-align:center;
+            font-size: 25px;
+        }
+        .syllabus{
+            color:rgb(230, 230, 230);
+            font-size:25px; 
+        }
+        body{
+            background:url(bg.jpg) no-repeat center center/cover;
+        }
+        table, th, td, tr{
+            border: 1px solid white;
+            font-size: 20px;
+        }
+        td{
+            color:rgb(249, 243, 243);
+            padding: 18px;
+        }
+        tr{
+            color:rgb(199, 224, 247);
+            padding: 5px;
+        }
+        .sublogo{
+            border-radius: 45px;
+            height: 28px;
+            width: 40px;
+            margin-right: 50px;
+        }
+        .fileinput, .fileinput input, .fileinput p{
+            font-size: 20px;
+            color: aliceblue;
+        }
+        .btn{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .file, #file-list p{
+            background-color: beige;
+            color: black;
+        }
+        .file{
+            padding: 11px 40px;
+            margin: 10px 0px;
+            border-radius: 30px;
+        }
+        </style>
+</head>
+<body>
+    <div class="head"><h2><img src="webd.png" class="sublogo" alt="Web Development">Web Development</h2></div>
+    
+    <div class="syllabus"><h3>Syllabus</h3></div>
+    <div><table>
+        <tr><th><strong>Introduction </strong></th><td> Basic principles involved in developing a web site, Planning process , Domains and 
+            Hosting, Responsive Web Designing , Types of Websites (Static and Dynamic Websites), Web 
+            Standards and W3C recommendations.</td></tr> 
+        <tr><th><strong>Introduction to HTML </strong></th><td>What is HTML , HTML Documents, Basic structure of an HTML 
+            document , Creating an HTML document , Mark up Tags , Heading-Paragraphs , Line Breaks.</td></tr> 
+        <tr><th><strong>Elements of HTML</strong></th><td> HTML Tags., Working with Text , Working with Lists, Tables and Frames, 
+            Working with Hyperlinks, Images and Multimedia, Working with Forms and controls </td></tr>
+        <tr><th><strong>Concept of CSS</strong></th><td> Creating Style Sheet, CSS Properties , CSS Styling(Background, Text Format, 
+            Controlling Fonts) , Working with block elements and objects , Working with Lists and Tables , 
+            CSS Id and Class, Box Model(Introduction, Border properties, Padding Properties, Margin 
+            properties) CSS Advanced(Grouping, Dimension, Display, Positioning, Floating, Align, Pseudo 
+            class, Navigation Bar, Image Sprites, Attribute sector) , CSS Color , Creating page Layout and Site 
+            Designs.</td></tr>
+        <tr><th><strong>Introduction to Javascript</strong></th><td>
+            Introduction to Client Side Scripting , Introduction to Java Script , Javascript Types , Variables in 
+            JS, Operators in JS , Conditions Statements , Java Script Loops, JS Popup Boxes , JS Events , JS 
+            Arrays, Working with Arrays, JS Objects ,JS Functions , Using Java Script in Real time , 
+            Validation of Forms, Related Examples</td></tr>
+            <tr><th><strong>Web Hosting</strong></th><td>Web Hosting Basics , Types of Hosting Packages, Registering domains , Defining 
+                Name Servers , Using Control Panel, Creating Emails in Cpanel , Using FTP Client, Maintaining a 
+                Website </td></tr>
+            <tr><th><strong>Concepts of SEO </strong></th><td>Basics of SEO, Importance of SEO, Onpage Optimization Basics</td></tr>
+        </table></div>
+    <br><br>
+        <div class="fileinput">
+            <h3>Upload Files from below : </h3>
+            <input type="file" id="file-upload">
+            <button class="btn" onclick="uploadFile()">UPLOAD</button><br><br>
+            <h3>Download a document:</h3>
+            <div id="file-list"></div>
+            <script src="script.js"></script>
+        </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+        .head{
+            color:rgb(209, 210, 210);
+            text-align:center;
+            font-size: 25px;
+        }
+        .syllabus{
+            color:rgb(230, 230, 230);
+            font-size:25px; 
+        }
+        body{
+            background:url(bg.jpg) no-repeat center center/cover;
+        }
+        table, th, td, tr{
+            border: 1px solid white;
+            font-size: 20px;
+        }
+        td{
+            color:rgb(249, 243, 243);
+            padding: 18px;
+        }
+        tr{
+            color:rgb(199, 224, 247);
+            padding: 5px;
+        }
+        .sublogo{
+            border-radius: 45px;
+            height: 28px;
+            width: 40px;
+            margin-right: 50px;
+        }
+        .fileinput, .fileinput input, .fileinput p{
+            font-size: 20px;
+            color: aliceblue;
+        }
+        .btn{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        
+        .file, #file-list p{
+            background-color: beige;
+            color: black;
+        }
+        .file{
+            padding: 11px 40px;
+            margin: 10px 0px;
+            border-radius: 30px;
+        }
+        </style>
+</head>
+<body>
+    <div class="head"><h2><img src="python.jpeg" class="sublogo" alt="Python">Python</h2></div>
+    
+    <div class="syllabus"><h3>Syllabus</h3></div>
+    <div><table>
+        
+        <tr><th><strong>Introduction:</strong> The Programming Cycle for Python , Python IDE, Interacting with Python Programs , Elements of Python, Type Conversion.</th>
+            <td><strong>Basics:</strong> Expressions, Assignment Statement, Arithmetic Operators, Operator Precedence, Boolean
+            Expression.</td></tr> 
+            
+        <tr><th><strong>Conditionals</strong></th><td> Conditional statement in Python (if-else statement, its working and execution),
+            Nested-if statement and Elif statement in Python, Expression Evaluation & Float Representation.</td></tr>
+        <tr><th><strong>Loops:</strong></th><td> Purpose and working of loops , While loop including its working, For Loop , Nested Loops ,
+            Break and Continue.</td></tr> 
+            
+        <tr><th><strong>Function</strong></th><td> Parts of A Function , Execution of A Function , Keyword and Default Arguments ,Scope
+            Rules.</td></tr>
+        <tr><th><strong>Strings </strong></th><td> Length of the string and perform Concatenation and Repeat operations in it. Indexing and
+            Slicing of Strings.</td></tr>
+            <tr><th><strong>Python Data Structure </strong></th><td> Tuples , Unpacking Sequences , Lists , Mutable Sequences , List
+            Comprehension , Sets , Dictionaries</td></tr>
+            <tr><th><strong>Higher Order Functions</strong></th><td> Treat functions as first class Objects , Lambda Expressions.</td></tr>
+            
+        <tr><th><strong>Sieve of Eratosthenes</strong></th><td> generate prime numbers with the help of an algorithm given by the Greek 
+            Mathematician named Eratosthenes, whose algorithm is known as Sieve of Eratosthenes.</td></tr>
+        <tr><th><strong>File I/O </strong></th><td> File input and output operations in Python Programming
+            Exceptions and Assertions</td></tr>
+        <tr><th><strong>    Modules </strong></th><td> Introduction , Importing Modules </td></tr>
+          <tr><th> <strong> Abstract Data Types :</strong></th><td> Abstract data types and ADT interface in Python Programming.</td></tr>
+        <tr><th><strong>    Classes </strong></th><td> Class definition and other operations in the classes , Special Methods ( such as _init_, 
+            _str_, comparison methods and Arithmetic methods etc.) , Class Example , Inheritance , Inheritance
+            and OOP.</td></tr>
+            
+        <tr><th><strong>Iterators & Recursion</strong></th><td> Recursive Fibonacci , Tower Of Hanoi</td></tr>
+        <tr><th><strong>Search </strong></th><td> Simple Search and Estimating Search Time , Binary Search and Estimating Binary Search
+            Time</td></tr>
+        <tr><th><strong>Sorting & Merging</strong></th><td> Selection Sort , Merge List , Merge Sort , Higher Order Sort</td></tr>
+        </table></td></tr>
+    <br><br>
+        <div class="fileinput">
+            <h3>Upload Files from below : </h3>
+            <input type="file" id="file-upload">
+            <button class="btn" onclick="uploadFile()">UPLOAD</button><br><br>
+            <h3>Download a document:</h3>
+            <div id="file-list"></div>
+            <script src="script.js"></script>
+        </div>
+</body>
+</html>

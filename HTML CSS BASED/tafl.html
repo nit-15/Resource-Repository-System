@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAFL</title>
+    <style>
+        .head{
+            color:rgb(209, 210, 210);
+            text-align:center;
+            font-size: 25px;
+        }
+        .syllabus{
+            color:rgb(230, 230, 230);
+            font-size:25px; 
+        }
+        body{
+            background:url(bg.jpg) no-repeat center center/cover;
+        }
+        table, th, td, tr{
+            border: 1px solid white;
+            font-size: 20px;
+        }
+        td{
+            color:rgb(249, 243, 243);
+            padding: 18px;
+        }
+        tr{
+            color:rgb(199, 224, 247);
+            padding: 5px;
+        }
+        .sublogo{
+            border-radius: 45px;
+            height: 28px;
+            width: 40px;
+            margin-right: 50px;
+        }
+        .fileinput, .fileinput input, .fileinput p{
+            font-size: 20px;
+            color: aliceblue;
+        }
+        .btn{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .file, #file-list p{
+            background-color: beige;
+            color: black;
+        }
+        .file{
+            padding: 11px 40px;
+            margin: 10px 0px;
+            border-radius: 30px;
+        }
+        </style>
+</head>
+<body>
+    <div class="head"><h2><img src="tafl.jpeg" class="sublogo" alt="TAFL">Theory of Computation and Formal Language</h2></div>
+    
+    <div class="syllabus"><h3>Syllabus</h3></div>
+    <div><table>
+        <tr><th><strong>Basic Concepts and Automata Theory</strong></th><td>
+             Introduction to Theory of Computation- Automata, 
+            Computability and Complexity, Alphabet, Symbol, String, Formal Languages, Deterministic 
+            Finite Automaton (DFA)- Definition, Representation, Acceptability of a String and Language, Non 
+            Deterministic Finite Automaton (NFA), Equivalence of DFA and NFA, NFA with ε-Transition, 
+            Equivalence of NFA’s with and without ε-Transition, Finite Automata with output- Moore 
+            Machine, Mealy Machine, Equivalence of Moore and Mealy Machine, Minimization of Finite 
+            Automata, Myhill-Nerode Theorem, Simulation of DFA and NFA</td></tr> 
+        <tr><th><strong>Regular Expressions and Languages</strong></th><td> 
+             Regular Expressions, Transition Graph, Kleen’s Theorem, 
+            Finite Automata and Regular Expression- Arden’s theorem, Algebraic Method Using Arden’s 
+            Theorem, Regular and Non-Regular Languages- Closure properties of Regular Languages, 
+            Pigeonhole Principle, Pumping Lemma, Application of Pumping Lemma, Decidability- Decision 
+            properties, Finite Automata and Regular Languages, Regular Languages and Computers, 
+            Simulation of Transition Graph and Regular language</td></tr> 
+        <tr><th><strong>Regular and Non-Regular Grammars</strong></th><td> Context Free Grammar(CFG)-Definition, Derivations, 
+            Languages, Derivation Trees and Ambiguity, Regular Grammars-Right Linear and Left Linear 
+            grammars, Conversion of FA into CFG and Regular grammar into FA, Simplification of CFG, 
+            Normal Forms- Chomsky Normal Form(CNF), Greibach Normal Form (GNF), Chomsky 
+            Hierarchy, Programming problems based on the properties of CFGs.
+       </td></tr>
+        <tr><th><strong>Push Down Automata and Properties of Context Free Languages</strong></th><td> Nondeterministic Pushdown 
+            Automata (NPDA)- Definition, Moves, A Language Accepted by NPDA, Deterministic Pushdown 
+            Automata(DPDA) and Deterministic Context free Languages(DCFL), Pushdown Automata for 
+            Context Free Languages, Context Free grammars for Pushdown Automata, Two stack Pushdown 
+            Automata, Pumping Lemma for CFL, Closure properties of CFL, Decision Problems of CFL, 
+            Programming problems based on the properties of CFLs. </td></tr>
+        <tr><th><strong> 
+            Turing Machines and Recursive Function Theory  </strong></th><td>Basic Turing Machine Model, 
+            Representation of Turing Machines, Language Acceptability of Turing Machines, Techniques for 
+            Turing Machine Construction, Modifications of Turing Machine, Turing Machine as Computer of 
+            Integer Functions, Universal Turing machine, Linear Bounded Automata, Church’s Thesis, 
+            Recursive and Recursively Enumerable language, Halting Problem, Post’s Correspondance 
+            Problem, Introduction to Recursive Function Theory.</td></tr>
+        </table></div>
+    <br><br>
+        <div class="fileinput">
+            <h3>Upload Files from below : </h3>
+            <input type="file" id="file-upload">
+            <button class="btn" onclick="uploadFile()">UPLOAD</button><br><br>
+            <h3>Download a document:</h3>
+            <div id="file-list"></div>
+            <script src="script.js"></script>
+        </div>
+</body>
+</html>

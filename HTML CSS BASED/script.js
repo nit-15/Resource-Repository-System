@@ -38,7 +38,7 @@ function displayFiles() {
     fileElement.innerHTML =
       "<h3>" + file.name + "</h3>" +
       "<p>Size: " + file.size + " bytes</p>" +
-      "<a href='" + URL.createObjectURL(file) + "' download>Download</a>";
+      "<a href='" + URL.createObjectURL(file) + "' download>DOWNLOAD</a>";
 
     // Add file element to the file list
     fileList.appendChild(fileElement);

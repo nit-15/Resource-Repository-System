@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <style>
+        .head{
+            color:rgb(209, 210, 210);
+            text-align:center;
+            font-size: 25px;
+        }
+        .syllabus{
+            color:rgb(230, 230, 230);
+            font-size:25px; 
+        }
+        body{
+            background:url(bg.jpg) no-repeat center center/cover;
+        }
+        table, th, td, tr{
+            border: 1px solid white;
+            font-size: 20px;
+        }
+        td{
+            color:rgb(249, 243, 243);
+            padding: 18px;
+        }
+        tr{
+            color:rgb(199, 224, 247);
+            padding: 5px;
+        }
+        .sublogo{
+            border-radius: 45px;
+            height: 28px;
+            width: 40px;
+            margin-right: 50px;
+        }
+        .fileinput, .fileinput input, .fileinput p{
+            font-size: 20px;
+            color: aliceblue;
+        }
+        .btn{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .file, #file-list p{
+            background-color: beige;
+            color: black;
+        }
+        .file{
+            padding: 11px 40px;
+            margin: 10px 0px;
+            border-radius: 30px;
+        }
+        </style>
+</head>
+<body>
+    <div class="head"><img src="maths.png" class="sublogo" alt="Maths"><span>Maths</span></div>
+    
+    <div class="syllabus"><h3>Syllabus</h3></div>
+    <div><table>
+        <tr><th><strong>Module I: <br>Partial Differential Equations</strong></th><td>
+        Origin of Partial Differential Equations, Linear and Non Linear Partial Equations of first order, 
+        Lagrange’s Equations, Charpit’s method, Cauchy’s method of Characteristics, Solution of Linear 
+        Partial Differential Equation of Higher order with constant coefficients, Equations reducible to 
+        linear partial differential equations with constant coefficients.</td></tr> 
+        <tr><th><strong>Module II: <br>Applications of Partial Differential Equations</strong></th><td> 
+        Classification of linear partial differential equation of second order, Method of separation of 
+        variables, Solution of wave and heat conduction equation up to two dimension, Laplace equation 
+        in two dimensions, Equations of Transmission lines.</td></tr> 
+        <tr><th><strong>Module III: <br>Statistical Techniques I</strong></th><td>
+        Introduction: Measures of central tendency, Moments, Moment generating function (MGF) , 
+        Skewness, Kurtosis, Curve Fitting , Method of least squares, Fitting of straight lines, Fitting of 
+        second degree parabola, Exponential curves ,Correlation and Rank correlation, Regression 
+        Analysis: Regression lines of y on x and x on y, regression coefficients, properties of regressions 
+        coefficients and non linear regression.</td></tr>
+        <tr><th><strong>Module IV: <br>Statistical Techniques II</strong></th><td>
+        Probability and Distribution: Introduction, Addition and multiplication law of probability, 
+        Conditional probability, Baye’s theorem, Random variables (Discrete and Continuous Random 
+        variable) Probability mass function and Probability density function, Expectation and variance, 
+        Discrete and Continuous Probability distribution: Binomial, Poission and Normal distributions.</td></tr>
+        <tr><th><strong>Module V: <br>Statistical Techniques III</strong></th><td>
+        Sampling, Testing of Hypothesis and Statistical Quality Control: Introduction , Sampling 
+        Theory (Small and Large) , Hypothesis, Null hypothesis, Alternative hypothesis, Testing a 
+        Hypothesis, Level of significance, Confidence limits, Test of significance of difference of means, 
+        T-test, F-test and Chi-square test, One way Analysis of Variance (ANOVA).Statistical Quality
+        Control (SQC) , Control Charts , Control Charts for variables ( X and R Charts), Control Charts 
+        for Variables ( p, np and C charts).</td></tr>
+        </table></div><br><br>
+    
+    <div class="fileinput">
+        <h3>Upload Files from below : </h3>
+        <input type="file" id="file-upload">
+        <button class="btn" onclick="uploadFile()">UPLOAD</button><br><br>
+        <h3>Download a document:</h3>
+        <div id="file-list"></div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
